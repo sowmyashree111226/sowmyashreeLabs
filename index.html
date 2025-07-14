@@ -91,6 +91,49 @@
             font-size: 14px;
             color: #888;
         }
+        <style>
+  /* Hide the checkbox */
+  #cookie-toggle {
+    display: none;
+  }
+
+  /* Banner styles */
+  #cookie-banner {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: #222;
+    color: #fff;
+    padding: 15px 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  /* When checkbox is checked, hide banner */
+  #cookie-toggle:checked + #cookie-banner {
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #cookie-banner p {
+    margin: 0;
+    flex: 1;
+  }
+
+  #cookie-banner label {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    font-weight: bold;
+  }
+</style>
     </style>
 </head>
 <body>
@@ -131,13 +174,7 @@
         <p>We will get back to you as soon as possible.</p>
     </div>
 </div>
-<div class="cookie-banner" id="cookieBanner">
-    <p>We use cookies to improve your experience on our site. Please let us know your preferences.</p>
-    <div class="buttons">
-      <button onclick="acceptCookies()">Accept</button>
-      <button class="reject" onclick="rejectCookies()">Reject</button>
-    </div>
-  </div>
+
 
 </body>
 </html>
