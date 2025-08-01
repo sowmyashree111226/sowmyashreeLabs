@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form with Checkboxes and Radio Buttons</title>
+</head>
+<body>
+
+  <h2>Choose Your Hobbies</h2>
+  <form action="/submit" method="POST">
+    <fieldset>
+      <legend>Select your hobbies:</legend>
+
+      <label for="sports">
+        <input type="checkbox" id="sports" name="hobbies" value="sports">
+        Sports
+      </label><br>
+
+      <label for="music">
+        <input type="checkbox" id="music" name="hobbies" value="music">
+        Music
+      </label><br>
+
+      <label for="reading">
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        Reading
+      </label><br>
+    </fieldset>
+
+    <h3>Gender</h3>
+    <fieldset>
+      <legend>Select your gender:</legend>
+
+      <label for="male">
+        <input type="radio" id="male" name="gender" value="male">
+        Male
+      </label><br>
+
+      <label for="female">
+        <input type="radio" id="female" name="gender" value="female">
+        Female
+      </label><br>
+
+      <label for="other">
+        <input type="radio" id="other" name="gender" value="other">
+        Other
+      </label><br>
+    </fieldset>
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+</html>
+
+
+
