@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- After adding this script, call setConsentBannerParams({uuid: <unique id> }) to set unique ID for a customer.  -->
-<script>
+<!--<script>
 (function () {
 	var s = document.createElement('script');
 	s.src = 'https://cdn-app5.securiti.ai/consent/cookie-consent-sdk-loader.js';
@@ -14,7 +14,7 @@
 	var parent_node = document.head || document.body;
 	parent_node.appendChild(s);
 })()
-</script>
+</script>-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
@@ -130,19 +130,39 @@
         <div class="checkbox-group">
             <div>
                 <label>
-                    <input type="checkbox" name="contact-method[]" value="Email"> Email
+                    <input type="checkbox" name="contact-method[]" value="Success Stories"> Success Stories
                 </label>
                 </div>
                 <div>
                  <label>
-                    <input type="checkbox" name="contact-method[]" value="whatsapp"> WhatsApp
+                    <input type="checkbox" name="contact-method[]" value="Events and Activities"> Events and Activities
                 </label>
             </div>
             <div>
                 <label>
-                    <input type="checkbox" name="contact-method[]" value="message"> Message
+                    <input type="checkbox" name="contact-method[]" value="Press News"> Press News
                 </label>
             </div>
+		 <div>
+                <label>
+                    <input type="checkbox" name="contact-method[]" value="E-consultations"> E-consultations
+                </label>
+             </div>
+		<div>
+		 <label>
+                    <input type="radio" name="contact-method[]" value="Email"> Email
+                </label>
+	  </div>
+		<div>
+		 <label>
+                    <input type="radio" name="contact-method[]" value="Email"> Whatsapp
+                </label>
+	  </div>
+		<div>
+		 <label>
+                    <input type="radio" name="contact-method[]" value="Phone"> Phone
+                </label>
+	  </div>
         </div>
 
         <button type="submit">Submit</button>
