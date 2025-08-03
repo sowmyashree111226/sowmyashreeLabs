@@ -173,12 +173,13 @@
 
 <script>
 	
-                                <script src='https://cdn-prod.securiti.ai/consent/form-consent-sdk.js'></script>
+                                
+                                <script src='https://cdn-app5.securiti.ai/consent/form-consent-sdk.js'></script>
                                 <script>window.addEventListener('load', function() {
     FormConsentSDK.initialize({
-        codeGenMetadata:{"formPropertyId":"144","formSelector":"[method*=\"post\"]","subjectIdentifiers":[{"name":"First Name:","selector":"[name = \"first-name\"]","isPrimary":false},{"name":"Last Name:","selector":"[name = \"last-name\"]","isPrimary":false},{"name":"Email:","selector":"[name = \"email\"]","isPrimary":true}],"consentIdentifiers":[{"type":"checkbox","name":"contact-method[]","selector":"[value = \"Success Stories\"]","propertyId":390737,"consentValue":"checked"},{"type":"checkbox","name":"contact-method[]","selector":"[value = \"Events and Activities\"]","propertyId":390738,"consentValue":"checked"},{"type":"checkbox","name":"contact-method[]","selector":"[value = \"Press News\"]","propertyId":390739,"consentValue":"checked"},{"type":"checkbox","name":"contact-method[]","selector":"[value = \"E-consultations\"]","propertyId":390740,"consentValue":"checked"},{"type":"radio","name":"contact-method[]","selector":"[name = \"contact-method[]\"]","propertyId":390741,"consentValue":"Email"},{"type":"radio","name":"contact-method[]","selector":"[name = \"contact-method[]\"]","propertyId":390742,"consentValue":"Phone"}],"consentTrigger":{"action":"submit","selector":""}},
-        url: 'https://app.securiti.ai/privaci/v1/',
-        authToken:'6f1a45b9-4852-4960-9056-de91de6edb8a',
+        codeGenMetadata:{"formPropertyId":"30","formSelector":"[method*=\"POST\"]","subjectIdentifiers":[{"name":"First Name:","selector":"[name = \"first-name\"]","isPrimary":false},{"name":"Last Name:","selector":"[name = \"last-name\"]","isPrimary":false},{"name":"Email:","selector":"[name = \"email\"]","isPrimary":true}],"consentIdentifiers":[{"type":"radio","name":"contact-method[]","selector":"[name = \"contact-method[]\"]","propertyId":987,"consentValue":"Email"},{"type":"radio","name":"contact-method[]","selector":"contact-method[]","propertyId":988,"consentValue":"Phone"}],"consentTrigger":{"action":"submit","selector":""}},
+        url: 'https://app5.securiti.ai/privaci/v1/',
+        authToken:'e2c62265-d762-4f48-8726-8656eadeae7e',
         orgId:'1',
         onConsentSuccess: null,
         onConsentFailure: null
