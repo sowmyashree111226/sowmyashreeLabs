@@ -173,16 +173,18 @@
 
 <script>
 	
-                                
+                             
                                 <script src='https://cdn-app5.securiti.ai/consent/form-consent-sdk.js'></script>
                                 <script>window.addEventListener('load', function() {
     FormConsentSDK.initialize({
-        codeGenMetadata:{"formPropertyId":"30","formSelector":"[method*=\"POST\"]","subjectIdentifiers":[{"name":"First Name:","selector":"[name = \"first-name\"]","isPrimary":false},{"name":"Last Name:","selector":"[name = \"last-name\"]","isPrimary":false},{"name":"Email:","selector":"[name = \"email\"]","isPrimary":true}],"consentIdentifiers":[{"type":"radio","name":"contact-method[]","selector":"[name = \"contact-method[]\"]","propertyId":987,"consentValue":"Email"},{"type":"radio","name":"contact-method[]","selector":"contact-method[]","propertyId":988,"consentValue":"Phone"}],"consentTrigger":{"action":"submit","selector":""}},
+        codeGenMetadata:{"formPropertyId":"31","formSelector":"[method*=\"POST\"]","subjectIdentifiers":[{"name":"First Name:","selector":"[name = \"first-name\"]","isPrimary":false},{"name":"Last Name:","selector":"[name = \"last-name\"]","isPrimary":false},{"name":"Email:","selector":"[name = \"email\"]","isPrimary":true}],"consentIdentifiers":[{"type":"checkbox","name":"contact-method[]","selector":"[name = \"contact-method[]\"][value = \"Email\"]","propertyId":989,"consentValue":"checked"},{"type":"checkbox","name":"contact-method[]","selector":"[value = \"Phone\"]","propertyId":990,"consentValue":"checked"}],"consentTrigger":{"action":"submit","selector":""}},
         url: 'https://app5.securiti.ai/privaci/v1/',
         authToken:'e2c62265-d762-4f48-8726-8656eadeae7e',
         orgId:'1',
         onConsentSuccess: null,
         onConsentFailure: null
+    })
+})</script>
     })
 })</script>
 </script>
