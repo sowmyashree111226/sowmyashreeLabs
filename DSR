@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+    (function () {
+        var s = document.createElement('script');
+        s.src = 'https://cdn-prod.securiti.ai/consent/cookie-consent-sdk-loader.js';
+        s.setAttribute('data-tenant-uuid', 'ac148030-769c-49c3-95d9-312b84bb140d');
+        s.setAttribute('data-domain-uuid', 'a17d2462-0541-4463-9200-69f02bc9942c');
+        s.setAttribute('data-backend-url', 'https://app.securiti.ai');
+        s.setAttribute('data-skip-css', 'false');
+        s.defer = true;
+        var parent_node = document.head || document.body;
+        parent_node.appendChild(s);
+    })()
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us & Privacy Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 50%;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .checkbox-group label {
+            margin-top: 10px;
+            font-weight: normal;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Styling for the new Privacy Portal section */
+        .privacy-portal-section {
+            margin-top: 40px;
+            border-top: 2px solid #eee;
+            padding-top: 20px;
+        }
+
+        .dsr-frame {
+            width: 100%;
+            height: 600px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .form-footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Contact Us</h1>
+    <form action="https://formsubmit.co/itsme.sowmyashree@gmail.com" method="POST">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <div class="checkbox-group">
+            <div>
+                <label>
+                    <input type="checkbox" name="contact-method[]" value="Success Stories"> Success Stories
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" name="contact-method[]" value="Events and Activities"> Events and Activities
+                </label>
+            </div>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="privacy-portal-section">
+        <h2>Privacy Rights Portal</h2>
+        <p style="text-align: center; font-size: 14px; color: #666;">Submit a request regarding your personal data using the portal below.</p>
+        <iframe 
+            src="https://privacy-central.securiti.ai/dsr-embed/101c60f6-ca35-4dd7-8e4b-cf1397f14427" 
+            class="dsr-frame"
+            title="Privacy Request Portal">
+        </iframe>
+    </div>
+    <div class="form-footer">
+        &copy; 2026 Your Company Name
+    </div>
+</div>
+
+<script src='https://cdn-prod.securiti.ai/consent/form-consent-sdk.js'></script>
+<script>
+window.addEventListener('load', function() {
+    FormConsentSDK.initialize({
+        codeGenMetadata: {
+            "formPropertyId": "150",
+            "formSelector": "[method*=\"POST\"]",
+            "subjectIdentifiers": [
+                { "name": "First Name:", "selector": "[name = \"first-name\"]", "isPrimary": false },
+                { "name": "Last Name:", "selector": "[name = \"last-name\"]", "isPrimary": false },
+                { "name": "Email:", "selector": "[name = \"email\"]", "isPrimary": true }
+            ],
+            "consentIdentifiers": [
+                { "type": "checkbox", "name": "contact-method[]", "selector": "[value = \"Success Stories\"]", "propertyId": 399394, "consentValue": "checked" },
+                { "type": "checkbox", "name": "contact-method[]", "selector": "[value = \"Events and Activities\"]", "propertyId": 399395, "consentValue": "checked" }
+            ],
+            "consentTrigger": { "action": "submit", "selector": "" }
+        },
+        url: 'https://app.securiti.ai/privaci/v1/',
+        authToken: '6f1a45b9-4852-4960-9056-de91de6edb8a',
+        orgId: '1',
+        onConsentSuccess: null,
+        onConsentFailure: null
+    })
+})
+</script>
+
+</body>
+</html>
